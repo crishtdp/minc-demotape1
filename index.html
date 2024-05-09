@@ -10,11 +10,12 @@
     <h1 onclick="Test()">Minacious C - Demo Tape (Only The Best)</h1>
     <h1 onclick="Test()">CLICK ME!!!</h1>
     <br>
-    <p>01. Disappointment</p>
-    <p>02. November</p>
-    <p>03. Aphonia</p>
-    <p>04. Voyager</p>
-    <p>05. Never Meant To Be</p>
+    <p>Tracklist</p>
+    <button onclick="Foo(0)">01. Disappointment           </button><br>
+    <button onclick="Foo(190)">02. November               </button><br>
+    <button onclick="Foo(412)">03. Aphonia                </button><br>
+    <button onclick="Foo(573)">04. Voyager                </button><br>
+    <button onclick="Foo(770)">05. Never Meant To Be      </button><br>
 
     <audio id="myaudio">
         <source src="Minacious C - Demo Tape (Only The Best).mp3" type="audio/mpeg">
@@ -24,6 +25,10 @@
     <script>
         function Test(){
             document.getElementById("myaudio").play()
+        }
+
+        function Foo(bar){
+            document.getElementById("myaudio").currentTime = bar;
         }
 
     </script>
